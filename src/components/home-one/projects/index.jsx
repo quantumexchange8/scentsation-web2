@@ -10,39 +10,21 @@ import { Pagination, Mousewheel } from "swiper/modules";
 const projectsData = [
 	{
 		id: crypto.randomUUID(),
-		title: "Product Design",
-		description: "Developing the look and feel of physical products, aesthetics, and functionality.",
+		title: "Increased brand visibility in nightlife settings.",
+		description: " ",
 		img: Project1Img,
 	},
 	{
 		id: crypto.randomUUID(),
-		title: "Logo and Branding",
-		description: "Creating or refreshing a company's logo and developing a cohesive visual identity.",
+		title: "Real-time customer usage data.",
+		description: " ",
 		img: Project2Img,
 	},
 	{
 		id: crypto.randomUUID(),
-		title: "App UI/UX Design",
-		description: "Designing the UI/UXe for mobile apps and web applications to ensure usability & engagement.",
+		title: "Sustainable, brand-aligned experiences.",
+		description: " ",
 		img: Project3Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		title: "Packaging Design",
-		description: "Creating packaging solutions for products that not only protect attract customers on store.",
-		img: Project4Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		title: "Product Design",
-		description: "Developing the look and feel of physical products, aesthetics, and functionality.",
-		img: Project1Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		title: "Logo and Branding",
-		description: "Creating or refreshing a company's logo and developing a cohesive visual identity.",
-		img: Project2Img,
 	},
 ];
 
@@ -72,13 +54,7 @@ function Projects() {
 			<div className="container">
 				<div className="aximo-section-title center light">
 					<h2>
-						Have a wide range of
-						<span className="aximo-title-animation">
-							creative projects
-							<span className="aximo-title-icon">
-								<img src={Star2Img} alt="Star2Img" />
-							</span>
-						</span>
+					Benefits of Partnership
 					</h2>
 				</div>
 			</div>

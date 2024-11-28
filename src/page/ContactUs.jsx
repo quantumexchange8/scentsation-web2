@@ -15,9 +15,9 @@ function ContactUs() {
 		<>
 			<BreadCrumb title="Contact Us" />
 			<ContactForm />
-			<ContactInfo />
-			<GoogleMap location={location} />
-			<TwoColumnFaq />
+			{/* <ContactInfo /> */}
+			{/* <GoogleMap location={location} /> */}
+			{/* <TwoColumnFaq /> */}
 		</>
 	);
 }

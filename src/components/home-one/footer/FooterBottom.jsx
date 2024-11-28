@@ -3,15 +3,15 @@ function FooterBottom() {
 	return (
 		<>
 			<div className="col-lg-6">
-				<div className="aximo-footer-logo">
+				{/* <div className="aximo-footer-logo">
 					<a href="">
 						<img src={LogoWhiteImg} alt="Logo" />
 					</a>
-				</div>
+				</div> */}
 			</div>
 			<div className="col-lg-6">
 				<div className="aximo-copywright one">
-					<p> &copy; Copyright 2024, All Rights Reserved by Mthemeus</p>
+					<p> &copy; All Rights Reserved by Scentsation</p>
 				</div>
 			</div>
 		</>

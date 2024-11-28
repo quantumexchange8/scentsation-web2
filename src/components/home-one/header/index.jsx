@@ -18,7 +18,7 @@ function Header() {
 						<DesktopNav>
 							<NavItem url="/">Home</NavItem>
 							<NavItem url="about-us">About Us</NavItem>
-							<NavItem url="about-us">Partnership</NavItem>
+							<NavItem url="partnership">Partnership</NavItem>
 							<NavItem url="contact-us">Contact Us</NavItem>
 							{/* <NavItem dropdown title="Blog">
 								<Dropdown>
@@ -29,10 +29,8 @@ function Header() {
 							</NavItem> */}
 						</DesktopNav>
 					</div>
-					<HeaderButton />
-
-					<MobileNavbar menuItemsData={menuItemsData} title="Scentsation" />
-				</nav>
+					<MobileNavbar menuItemsData={menuItemsData} title={<HeaderLogo />} />
+					</nav>
 			</div>
 		</header>
 	);

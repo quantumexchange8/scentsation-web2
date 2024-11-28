@@ -3,6 +3,7 @@ import ContactThumb from "../../assets/images/contact/contact-thumb.png";
 import Star2Img from "../../assets/images/v1/star2.png";
 import FadeInRight from "../animation/FadeInRight";
 import Field from "../common/Field";
+
 function ContactForm() {
 	const {
 		register,
@@ -20,12 +21,11 @@ function ContactForm() {
 						<div className="aximo-section-title">
 							<h2>
 								<span className="aximo-title-animation">
-									Contact us for a
+									Contact us
 									<span className="aximo-title-icon">
 										<img src={Star2Img} alt="Star" />
 									</span>
 								</span>
-								personal experience
 							</h2>
 						</div>
 					</div>
@@ -41,7 +41,7 @@ function ContactForm() {
 						<div className="aximo-main-form">
 							<form onSubmit={handleSubmit(submitForm)}>
 								<div className="aximo-main-field">
-									<Field label="Your Name" error={errors.name}>
+									<Field label="Name" error={errors.name}>
 										<input
 											{...register("name", { required: "Name is required." })}
 											type="name"
@@ -51,7 +51,7 @@ function ContactForm() {
 									</Field>
 								</div>
 								<div className="aximo-main-field">
-									<Field label="Enter email address" error={errors.email}>
+									<Field label="Email Address" error={errors.email}>
 										<input
 											{...register("email", { required: "Email is required." })}
 											type="email"
@@ -61,13 +61,17 @@ function ContactForm() {
 									</Field>
 								</div>
 								<div className="aximo-main-field">
-									<Field label="Enter Phone Number" error={errors.phone}>
-										<input
-											{...register("phone", { required: "Phone is required." })}
-											type="phone"
-											name="phone"
-											id="phone"
-										/>
+									<Field label="I am a:" error={errors.userType}>
+										<select
+										{...register("userType", { required: "Please select an option." })}
+										name="userType"
+										id="userType"
+										>
+										<option value="">-- Select an option --</option>
+										<option value="venue-owner">Venue Owner</option>
+										<option value="fragrance-brand">Fragrance Brand</option>
+										<option value="general-inquiry">General Inquiry</option>
+										</select>
 									</Field>
 								</div>
 								<div className="aximo-main-field">

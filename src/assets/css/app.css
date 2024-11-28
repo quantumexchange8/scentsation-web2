@@ -22,11 +22,11 @@
 	--heading-color5: #2c2c2c;
 	--heading-color6: #0b1040;
 	--body-color: #0c0c0c;
-	--accent-color: #bff747;
+	--accent-color: #d0ad5e;
 	--white-smoke: #fdfde1;
 	--white-color: #ffffff;
 	--orange-color: #ff4612;
-	--orange-color2: #ff8064;
+	--orange-color2: #413f3f;
 	--corn-color: #f4b905;
 	--green-color: #073d30;
 	--green-color2: #02854c;
@@ -42,7 +42,7 @@
 	--white-bg: #ffffff;
 	--orange-bg: #ff4612;
 	--orange-bg2: #ff8064;
-	--accent-bg: #bff747;
+	--accent-bg: #d0ad5e;
 	--yellow-bg: #ffe757;
 	--corn-bg: #f4b905;
 	--blue-bg: #0000ff;
@@ -2201,6 +2201,35 @@ header.aximo-header-section.aximo-header7.sticky-menu {
 .aximo-info ul li a {
 	color: var(--white-smoke);
 }
+.aximo_link {
+	margin-top: 100px;
+}
+.aximo-link-padding {
+	padding: 100px 0 100px;
+}
+@media (max-width: 991px) {
+	.aximo-link-padding {
+		justify-content: center; /* Centers horizontally */
+		align-items: center; /* Centers vertically */
+		height: 100%; /* Ensure it takes up the parent's full height */
+		text-align: center; /* Centers inline content like text */
+	}
+}
+
+.aximo-link p {
+	font-size: 21px;
+	color: var(--accent-color);
+}
+
+.aximo-link a{
+	font-size: 21px;
+	color: var(--white-smoke);
+}
+.aximo-link a:hover{
+	font-size: 21px;
+	color: var(--accent-color);
+	
+}
 
 .aximo-hero-shape.aximo-footer-shape {
 	bottom: 10%;
@@ -2513,8 +2542,8 @@ header.aximo-header-section.aximo-header7.sticky-menu {
 	-webkit-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
 	overflow: hidden;
-	color: var(--light-bg2) !important;
-	background-color: var(--orange-bg);
+	color: var(--dark-bg2) !important;
+	background-color: var(--accent-bg);
 	position: relative;
 	z-index: 0;
 	overflow: hidden;
@@ -3560,7 +3589,7 @@ h1.post__title {
 
 .aximo-call-btn {
 	border-radius: 50px;
-	width: 350px;
+	width: 250px;
 	padding: 13px 0 13px 0;
 	display: inline-block;
 	font-size: 16px;
@@ -5002,12 +5031,22 @@ p.aximo-skillbar-lable {
 }
 
 .aximo-iconbox-wrap {
-	height: 350px;
+	height: 300px;
 	padding: 30px;
 	border-radius: 20px;
 	margin-bottom: 30px;
 	transition: all 0.4s;
 	border: 2px solid var(--heading-color);
+}
+@media (max-width: 991px) {
+	.aximo-iconbox-wrap {
+		height: 220px;
+	}
+}
+@media (max-width: 767px) {
+	.aximo-iconbox-wrap {
+		height: 250px;
+	}
 }
 .aximo-iconbox-wrap:hover {
 	background-color: var(--accent-bg);
@@ -5046,7 +5085,7 @@ p.aximo-skillbar-lable {
 .aximo-iconbox-column {
 	display: grid;
 	gap: 24px;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Fixed size of 300px per column */
 }
 @media (max-width: 991px) {
 	.aximo-iconbox-column {
@@ -5054,6 +5093,9 @@ p.aximo-skillbar-lable {
 	}
 }
 .aximo-iconbox-wrap3 {
+	display: flex; /* Creates a horizontal layout */
+	align-items: center;
+	height: 200px;
 	padding: 40px;
 	border-radius: 20px;
 	display: flex;
@@ -5079,6 +5121,9 @@ p.aximo-skillbar-lable {
 	margin-right: 24px;
 	flex-shrink: 0;
 }
+.aximo-iconbox-data3 {
+	flex: 1; /* Allows the content to take up remaining space */
+  }
 .aximo-iconbox-data3 h3 {
 	font-size: 35px;
 	margin-bottom: 20px;
@@ -5265,12 +5310,12 @@ p.aximo-skillbar-lable {
 	border-top: 2px solid #e6e6e6;
 }
 .aximo-numberbox-wrap:hover {
-	border-top: 2px solid var(--orange-bg2);
+	border-top: 2px solid var(--accent-color);
 }
 .aximo-numberbox-wrap:hover .aximo-numberbox-number {
 	color: var(--light-color3);
-	border: 1px solid var(--orange-bg2);
-	background-color: var(--orange-bg2);
+	border: 1px solid var(--accent-color);
+	background-color: var(--accent-color);
 }
 .aximo-numberbox-number {
 	line-height: 1;
@@ -5308,17 +5353,17 @@ a.aximo-service-icon:hover {
 }
 
 .aximo-faq-wrap {
-	padding: 130px 0;
+	padding: 10px 0 100px 0;
 	border-bottom: 1px solid #e6e6e6;
 }
 @media (max-width: 991px) {
 	.aximo-faq-wrap {
-		padding: 100px 0;
+		padding: 10px 0 50px;
 	}
 }
 @media (max-width: 767px) {
 	.aximo-faq-wrap {
-		padding: 80px 0;
+		padding: 10px 0 50px;
 	}
 }
 /* Accordion one */
@@ -6223,6 +6268,12 @@ img.aximo-video-circle {
 		font-size: 40px;
 	}
 }
+.aximo-cta-wrap p {
+	font-size: 21px;
+	color: var(--light-color4);
+	max-width: 740px;
+	margin: 0 auto 50px;
+}
 
 .aximo-cta-shape1 {
 	position: absolute;
@@ -6598,16 +6649,16 @@ img.aximo-video-circle {
 }
 
 .extra-side-margin {
-	margin: 0 50px;
+	margin: 0 50px 100px;
 }
 @media (max-width: 991px) {
 	.extra-side-margin {
-		margin: 0 20px;
+		margin: 0 20px 80px;
 	}
 }
 @media (max-width: 767px) {
 	.extra-side-margin {
-		margin: 0 12px;
+		margin: 0 12px 50px;
 	}
 }
 
@@ -7818,7 +7869,7 @@ img.aximo-video-circle {
 	color: var(--heading-color2);
 }
 .aximo-service-increase-body {
-	flex: 0 0 47%;
+	flex: 0 0 50;
 	z-index: 9;
 	padding-right: 20px;
 	position: relative;
@@ -8237,11 +8288,11 @@ a.aximo-connect-login img {
 }
 
 .aximo-section-padding {
-	padding: 125px 0 130px;
+	padding: 100px 0 100px;
 }
 @media (max-width: 991px) {
 	.aximo-section-padding {
-		padding: 100px 0;
+		padding: 90px 0;
 	}
 }
 @media (max-width: 767px) {
@@ -8341,7 +8392,13 @@ a.aximo-connect-login img {
 	font-weight: 600;
 	color: var(--orange-color2);
 }
-
+.aximo-white-subtitle {
+	font-size: 24px;
+	margin-bottom: 20px;
+	display: block;
+	font-weight: 600;
+	color: var(--white-color);
+}
 .aximo-section-title {
 	padding-bottom: 80px;
 }
@@ -9986,6 +10043,20 @@ a.comment-reply {
 	display: block;
 	margin-bottom: 10px;
 }
+.aximo-main-field select {
+	width: 100%; /* Full-width dropdown */
+	padding: 20px; /* Match the input padding */
+	font-size: 16px; /* Match the input font size */
+	border: 2px solid var(--heading-color); /* Consistent border with input */
+	border-radius: 30px; /* Rounded corners */
+	background: var(--light-color7);
+	transition: border-color 0.3s; /* Smooth focus transition */
+}
+  
+.aximo-main-field select:focus {
+	border-color: var(--primary-color); /* Highlight border on focus */
+	outline: none; /* Remove default outline */
+}  
 
 #aximo-main-btn {
 	width: 180px;
@@ -10340,6 +10411,12 @@ button#aximo-notified-btn {
 	top: 5px;
 	right: 5px;
 }
+.mobile-navbar {
+	padding: 50px 0  0;
+}
+.mobile-menu-head--title {
+	padding: 0 0 100px 0;
 
+}
 /*1.4 themes css*/
 /*# sourceMappingURL=app.css.map */
