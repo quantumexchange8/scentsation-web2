@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Logo from "../../../assets/images/logo/Scentsation-Logo_H.png";
+import Logo from "../../../assets/images/logo/Scentsation-Logo_H_W.png";
 function HeaderLogo() {
 	return (
 		<div className="brand-logo">
