@@ -8,6 +8,7 @@ import MobileNavbar from "../../common/navigation/mobile-nav/MobileNavbar";
 import HeaderButton from "./HeaderButton";
 import HeaderLogo from "./HeaderLogo";
 
+
 function Header() {
 	return (
 		<header className="site-header aximo-header-section aximo-header1 dark-bg" id="sticky-menu">
@@ -30,7 +31,7 @@ function Header() {
 						</DesktopNav>
 					</div>
 					<MobileNavbar menuItemsData={menuItemsData} title={<HeaderLogo />} />
-					</nav>
+				</nav>
 			</div>
 		</header>
 	);

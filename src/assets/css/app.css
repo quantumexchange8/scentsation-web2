@@ -2758,7 +2758,7 @@ textarea {
 	margin: 0;
 	width: 100%;
 	height: 60px;
-	font-weight: 700;
+	/* font-weight: 600; */
 	color: var(--heading-color);
 	font-size: 16px;
 	border-radius: 50px;
@@ -10047,7 +10047,7 @@ a.comment-reply {
 	width: 100%; /* Full-width dropdown */
 	padding: 20px; /* Match the input padding */
 	font-size: 16px; /* Match the input font size */
-	border: 2px solid var(--heading-color); /* Consistent border with input */
+	border: 1px solid var(--heading-color); /* Consistent border with input */
 	border-radius: 30px; /* Rounded corners */
 	background: var(--light-color7);
 	transition: border-color 0.3s; /* Smooth focus transition */
@@ -10415,7 +10415,7 @@ button#aximo-notified-btn {
 	padding: 50px 0  0;
 }
 .mobile-menu-head--title {
-	padding: 0 0 100px 0;
+	/* margin: 0 0 100px 0; */
 
 }
 /*1.4 themes css*/

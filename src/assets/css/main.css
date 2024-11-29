@@ -28,6 +28,13 @@
 	}
 }
 
+.menu-block-wrapper {
+	margin-left: auto; /* Pushes the element to the right */
+	display: flex; /* Ensures the content inside aligns properly */
+	justify-content: flex-end; /* Aligns content to the right */
+  }
+  
+
 .site-navbar .menu-block-wrapper {
 	flex-grow: 1;
 	align-items: center;
@@ -351,12 +358,26 @@
 
 .site-menu-main .nav-link-item {
 	color: var(--heading-color);
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 600;
 	font-style: normal;
 	letter-spacing: normal;
 	position: relative;
+	text-decoration: none; /* Remove underline */
+	transition: color 0.3s ease; /* Smooth color transition */
 }
+
+
+.aximo-header1 .site-menu-main .nav-link-item:hover {
+	color:  #555; /* Optional: hover color */
+}
+
+
+.aximo-header1 .site-menu-main .nav-link-item.active-link {
+	color: var(--accent-color); /* Active link uses accent color */
+	font-weight: 600; /* Slightly bolder for emphasis */
+}
+
 .aximo-header1 .site-menu-main .nav-link-item {
 	color: var(--white-smoke);
 }
