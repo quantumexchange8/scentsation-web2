@@ -44,7 +44,7 @@ const swiperSettings = {
 			slidesPerView: 2,
 		},
 		1600: {
-			slidesPerView: 3.5,
+			slidesPerView: 3,
 		},
 	},
 };
@@ -57,15 +57,15 @@ function Projects() {
 					Benefits of Partnership
 					</h2>
 				</div>
-			</div>
-			<div className="swiper aximo-project-slider">
-				<Swiper {...swiperSettings}>
-					{projectsData.map((project) => (
-						<SwiperSlide key={project.id}>
-							<ProjectCard project={project} />
-						</SwiperSlide>
-					))}
-				</Swiper>
+				<div className="swiper aximo-project-slider">
+					<Swiper {...swiperSettings}>
+						{projectsData.map((project) => (
+							<SwiperSlide key={project.id}>
+								<ProjectCard project={project} />
+							</SwiperSlide>
+						))}
+					</Swiper>
+				</div>
 			</div>
 		</div>
 	);

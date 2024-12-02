@@ -31,7 +31,7 @@ function JoinUs() {
 									<p>Reach your audience directly with pay-per-spray exposure and custom ad placements on our digital screens.</p>
 								</ul>
 							</div>
-							<Link className="aximo-call-btn" to="/about-us">
+							<Link className="aximo-call-btn" to="/contact-us">
 							Become a Partner
 							</Link>
 						</div>

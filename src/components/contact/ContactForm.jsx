@@ -19,25 +19,28 @@ function ContactForm() {
 
   const submitForm = async (formData) => {
 	try {
-
-		const response = await axios.post("http://localhost:5000/send-email", formDataWithToken);
-		// Dynamically update the success message
-	  	const messageContainer = document.querySelector(".message-container");
-	  	if (messageContainer) {
-			messageContainer.innerHTML =
-		  		'<div class="alert alert-success">Your message has been sent successfully!</div>';
-	  	}
-		
-	  	setErrorMessage(""); // Clear error messages
-	} catch (error) {
-	  // Dynamically update the error message
-	  const messageContainer = document.querySelector(".message-container");
-	  if (messageContainer) {
-		messageContainer.innerHTML =
-		  '<div class="alert alert-danger">Failed to send your message. Please try again later.</div>';
-	  }
-	  setSuccessMessage(""); // Clear success messages
-	}
+      // Construct formDataWithToken including the reCAPTCHA token
+      const formDataWithToken = { ...formData, recaptchaToken };
+  
+      // Send the data to the backend
+      const response = await axios.post("http://localhost:5000/contact-us", formDataWithToken);
+  
+      // Handle success
+      const messageContainer = document.querySelector(".message-container");
+      if (messageContainer) {
+        messageContainer.innerHTML =
+          '<div class="alert alert-success">Your message has been sent successfully!</div>';
+      }  
+      setErrorMessage(""); // Clear error messages
+    } catch (error) {
+      // Handle errors
+      const messageContainer = document.querySelector(".message-container");
+      if (messageContainer) {
+        messageContainer.innerHTML =
+          '<div class="alert alert-danger">Failed to send your message. Please try again later.</div>';
+      }
+      setSuccessMessage(""); // Clear success messages
+    }
   };
   
   const handleRecaptcha = (token) => {
@@ -72,6 +75,9 @@ function ContactForm() {
           <div className="col-lg-7">
             <div className="aximo-main-form">
 			  <div className="message-container"></div>
+			  <div className="message-container"></div>
+
+			    <div className="message-container"></div>
 
               <form onSubmit={handleSubmit(submitForm)}>
                 <div className="aximo-main-field">
@@ -95,20 +101,20 @@ function ContactForm() {
                   </Field>
                 </div>
                 <div className="aximo-main-field">
-					<Field label="I am a:" error={errors.userType}>
-						<select
-						{...register("userType", { required: "Please select an option." })}
-						name="userType"
-						id="userType"
-						defaultValue="" // Use defaultValue here
-						>
-						<option value="" disabled>-- Select an option --</option>
-						<option value="venue-owner">Venue Owner</option>
-						<option value="fragrance-brand">Fragrance Brand</option>
-						<option value="general-inquiry">General Inquiry</option>
-						</select>
-					</Field>
-				</div>
+                  <Field label="I am a:" error={errors.userType}>
+                    <select
+                    {...register("userType", { required: "Please select an option." })}
+                    name="userType"
+                    id="userType"
+                    defaultValue="" // Use defaultValue here
+                    >
+                    <option value="" disabled>-- Select an option --</option>
+                    <option value="venue-owner">Venue Owner</option>
+                    <option value="fragrance-brand">Fragrance Brand</option>
+                    <option value="general-inquiry">General Inquiry</option>
+                    </select>
+                  </Field>
+                </div>
                 <div className="aximo-main-field">
                   <label>Write your message here...</label>
                   <textarea {...register("message", { required: "Message is required." })}></textarea>

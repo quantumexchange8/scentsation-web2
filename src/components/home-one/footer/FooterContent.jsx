@@ -1,9 +1,10 @@
 import Shape1Img from "../../../assets/images/v1/shape1.png";
 import Star2Img from "../../../assets/images/v1/star2.png";
+import logo from "../../../assets/images/logo/Scentsation-Logo_V-W.png"
 function FooterContent() {
 	return (
 		<div className="aximo-default-content light position-relative">
-			<img src="src\assets\images\logo\Scentsation-Logo_V-W.png"
+			<img src={logo}
 				style={{ width: '300px', height: 'auto' }}
 			/>
 

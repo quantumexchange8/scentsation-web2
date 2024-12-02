@@ -38,7 +38,7 @@ const transporter = nodemailer.createTransport({
 });
 
 // Route to send email
-app.post("/send-email", async (req, res) => {
+app.post("/contact-us", async (req, res) => {
   const { recaptchaToken, name, email, userType, message } = req.body;
   const isRecaptchaValid = await verifyRecaptcha(recaptchaToken);
   if (!isRecaptchaValid) {
