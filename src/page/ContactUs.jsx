@@ -3,6 +3,8 @@ import ContactForm from "../components/contact/ContactForm";
 import ContactInfo from "../components/contact/ContactInfo";
 import GoogleMap from "../components/contact/GoogleMap";
 import TwoColumnFaq from "../components/contact/TwoColumnFaq";
+import ReactDOM from 'react-dom';
+
 function ContactUs() {
 	const location = {
 		center: {
@@ -21,5 +23,7 @@ function ContactUs() {
 		</>
 	);
 }
+const rootElement = document.getElementById('root');
+// ReactDOM.render(<ContactUs />, rootElement);
 
 export default ContactUs;
