@@ -8,6 +8,10 @@ export const menuItemsData = [
 		url: "about-us",
 	},
 	{
+		title: "How To Use",
+		url: "how-to-use",
+	},
+	{
 		title: "Partnership",
 		url: "partnership",
 	},

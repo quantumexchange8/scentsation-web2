@@ -12,6 +12,7 @@ import ErrorPage from "../error-page";
 import AboutUs from "../page/AboutUs";
 import ContactUs from "../page/ContactUs";
 import Partnership from "../page/Partnership";
+import HowToUse from "../page/HowToUse";
 import Pricing from "../page/Pricing";
 import Reset from "../page/auth/ResetPassword.jsx";
 import SignIn from "../page/auth/SignIn";
@@ -57,6 +58,10 @@ export const router = createBrowserRouter([
 					{
 						path: "/contact-us",
 						element: <ContactUs />,
+					},
+					{
+						path: "/how-to-use",
+						element: <HowToUse />,
 					},
 					{
 						path: "/partnership",

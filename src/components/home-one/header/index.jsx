@@ -19,6 +19,7 @@ function Header() {
 						<DesktopNav>
 							<NavItem url="/">Home</NavItem>
 							<NavItem url="about-us">About Us</NavItem>
+							<NavItem url="how-to-use">How To Use</NavItem>
 							<NavItem url="partnership">Partnership</NavItem>
 							<NavItem url="contact-us">Contact Us</NavItem>
 							{/* <NavItem dropdown title="Blog">

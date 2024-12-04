@@ -33,7 +33,8 @@ function HomeOne() {
 		<>
 			<Hero />
 			<Introduction />
-			<Step />
+			{/* <Step /> */}
+			
 			<Services services={servicesData} />
 			<Cta />
 		</>
