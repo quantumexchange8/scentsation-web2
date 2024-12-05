@@ -48,7 +48,7 @@ function ContactForm() {
 
   // Equivalent to componentDidMount, loads captcha
   useEffect(() => {
-    loadCaptchaEnginge(8); // Initialize the captcha when the component mounts
+    loadCaptchaEnginge(6,'white','black','numbers'); // Initialize the captcha when the component mounts
   }, []);
 
   const handleCaptchaChange = (event) => {
