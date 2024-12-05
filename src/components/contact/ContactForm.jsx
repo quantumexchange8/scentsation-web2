@@ -31,7 +31,7 @@ function ContactForm() {
 
         // Reset the form fields on success
         reset();
-        loadCaptchaEnginge(8); // Reset captcha
+        loadCaptchaEnginge(6,'white','black','numbers'); // Reset captcha
 
       } catch (error) {
         const messageContainer = document.querySelector(".message-container");
