@@ -15,6 +15,8 @@ function ContactUs() {
 	};
 	return (
 		<>
+			<title>Contact Us - Scentsation </title>
+
 			<BreadCrumb title="Contact Us" />
 			<ContactForm />
 			{/* <ContactInfo /> */}

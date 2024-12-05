@@ -31,6 +31,7 @@ const servicesData = [
 function HomeOne() {
 	return (
 		<>
+		<title>Home - Scentsation</title>
 			<Hero />
 			<Introduction />
 			{/* <Step /> */}

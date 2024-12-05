@@ -23,6 +23,7 @@ function Footer() {
 									<p>Links</p>
 									<a href="/">Home</a><br/>
 									<a href="/about-us">About Us</a><br/>
+									<a href="/how-to-use">How To Use</a><br/>
 									<a href="/partnership">Partnership</a><br/>
 									<a href="/contact-us">Contact Us</a>
 								</div>
