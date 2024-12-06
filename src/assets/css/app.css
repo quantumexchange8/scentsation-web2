@@ -387,7 +387,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-	font-family: "Syne", sans-serif;
+	font-family: "Nutino Sans", sans-serif;
 	color: var(--heading-color);
 	font-weight: 700;
 	margin: 0;
@@ -789,7 +789,7 @@ blockquote {
 	padding: 30px;
 	margin: 0 0 24px;
 	color: var(--white-smoke);
-	font-family: "Syne", sans-serif;
+	font-family: "Nutino Sans", sans-serif;
 	background-color: var(--dark-bg);
 }
 
@@ -2688,7 +2688,7 @@ header.aximo-header-section.aximo-header7.sticky-menu {
 	letter-spacing: -0.14px;
 	text-transform: uppercase;
 	position: relative;
-	font-family: "Syne", sans-serif;
+	font-family: "Nutino Sans", sans-serif;
 	padding-bottom: 8px;
 }
 .aximo-icon-btn img {
@@ -9751,7 +9751,7 @@ a.post-read-more:hover img {
 	font-weight: 700;
 	color: var(--heading-color);
 	line-height: 24px; /* 133.333% */
-	font-family: "Syne", sans-serif;
+	font-family: "Nutino Sans", sans-serif;
 }
 
 .post-item {
@@ -10337,7 +10337,7 @@ a.comment-reply {
 	line-height: 1em;
 	margin-bottom: 10px;
 	letter-spacing: -1.04px;
-	font-family: "Syne", sans-serif;
+	font-family: "Nutino Sans", sans-serif;
 }
 @media (max-width: 1400px) {
 	.number {
