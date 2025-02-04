@@ -24,9 +24,8 @@ function ContactInfo() {
 								<img src={Call2Img} alt="Call Img" />
 							</div>
 							<div className="aximo-contact-info-data">
-								<span>Call us</span>
-								<p>+088-234-6532-789</p>
-								<p>+088-456-3217-005</p>
+								<span>Phone Number</span>
+								<p>(+44) 0800 102 6760</p>
 							</div>
 						</div>
 					</FadeInStaggerTwoChildren>
@@ -37,8 +36,7 @@ function ContactInfo() {
 							</div>
 							<div className="aximo-contact-info-data">
 								<span>Email us</span>
-								<p>example@gmail.com</p>
-								<p>example@gmail.com</p>
+								<p>info@scentsationglobal.com</p>
 							</div>
 						</div>
 					</FadeInStaggerTwoChildren>
@@ -48,8 +46,11 @@ function ContactInfo() {
 								<img src={MapImg} alt="Map" />
 							</div>
 							<div className="aximo-contact-info-data">
-								<span>Office address</span>
-								<p>4132 Thornridge City, New York.</p>
+								<span>UK Address</span>
+								<p>Collingwood Buildings
+									38 Collingwood Street
+									Newcastle Upon Tyne
+									NE1 1JF</p>
 							</div>
 						</div>
 					</FadeInStaggerTwoChildren>
